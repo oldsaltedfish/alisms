@@ -23,7 +23,7 @@ class AliSmsServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'../config/alisms.php' => config_path('alisms.php'),
+            __DIR__.'/../config/alisms.php' => config_path('alisms.php'),
         ]);
     }
 }
