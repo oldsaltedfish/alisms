@@ -1,0 +1,38 @@
+{
+    "name": "wuliaowyh/alisms",
+    "description": "alibaba sms",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "wyh",
+            "email": "rmzf@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Wuliaowyh\\AliSms\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wuliaowyh\\AliSms\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "alibabacloud/client": "^1.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wuliaowyh\\AliSms\\ServiceProvider"
+            ],
+            "aliases": {
+                "AliSms": "Wuliaowyh\\Facades\\AliSms"
+            }
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.5"
+    }
+}
