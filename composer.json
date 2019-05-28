@@ -25,10 +25,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Wuliaowyh\\AliSms\\ServiceProvider"
+                "Wuliaowyh\\AliSms\\AliSmsServiceProvider"
             ],
             "aliases": {
-                "AliSms": "Wuliaowyh\\Facades\\AliSms"
+                "AliSms": "Wuliaowyh\\AliSms\\Facades\\AliSms"
             }
         }
     },
